@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>8J 八戒棋牌</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <script src="./assets/js/jquery-3.7.1.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="./assets/js/jianrong.js"></script>
+    <script type="text/javascript" src="./assets/js/openinstall.js"></script>
+    <script type="text/javascript" src="./assets/js/openinstall_source.js"></script>
+    <script src="./assets/js/rem.js"></script>
+    <script type="text/javascript">
+        const kfurl='http://8jkf1201.cc/';
+    </script>
+</head>
+<body>
+    <div class="center">
+        <div class="top">
+            <img src="./assets/Images/Header_Banner.png" alt="">
+            <div class="downBtn">
+                <a class="downloadButton"> 
+                    <a href="https://supkb.wangkx3.cn/api/c/pjqf7eg1"><img src="./assets/Images/Download_Button_Img2.png" alt="Download APP">
+                </a>
+            </div>
+        </div>
+        <div class="game-recommended">
+            <div class="title-header"><img src="./assets/Images/GameRecommended_Img2.png" alt=""></div>
+            
+        </div>
+        <div class="h5link">
+            <div class="h5-img">
+                <img src="./assets/Images/Part 2 H5_1.png" alt="">
+            </div>
+            <div class="h5-btn">
+                <!-- <a href="#"><img src="./assets/Images/Part 2 H5 Button.png"></a>
+                <a href="#"><img src="./assets/Images/Part 2 H5 Button.png"></a>
+                <a href="#"><img src="./assets/Images/Part 2 H5 Button.png"></a> -->
+                <div class="site1">
+                    <div class="row">
+                        <div class="speed" id="speed-line1">8JH3.com</div>
+                    </div>
+                    <div class="enter">
+                        <a href="#" onclick="goH5Url('8JH3.com')">
+                            <img src="./assets/Images/Part 2 H5 Button.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="site2">
+                    <div class="row">
+                        <div class="speed" id="speed-line1">8JH4.com</div>
+                    </div>
+                    <div class="enter">
+                        <a href="#" onclick="goH5Url('8JH4.com')">
+                            <img src="./assets/Images/Part 2 H5 Button.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="site3">
+                    <div class="row">
+                        <div class="speed" id="speed-line1">8JH5.com</div>
+                    </div>
+                    <div class="enter">
+                        <a href="#" onclick="goH5Url('8JH5.com')">
+                            <img src="./assets/Images/Part 2 H5 Button.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promotions">
+            <div class="promotion-img">
+                <img src="./assets/Images/Part 3 Promotions.png" alt="">
+            </div>
+        </div>
+        <div class="vip">
+            <div class="vip-img">
+                <img src="./assets/Images/Part 4 Dragon VIP_Img2.png" alt="">
+                <a class="btn" href="#open-modal"><img src="./assets/Images/Part 4 Dragon VIP_Button.png" alt=""></a>
+            </div>
+        </div>
+        <div class="uni-agent">
+            <div class="agent-img">
+                <img src="./assets/Images/Part 5 Universal Agent.png" alt="">
+                <img src="./assets/Images/Part 6 Agent Benefits.png" alt="">
+            </div>
+        </div>
+        <div class="main-footer">
+            <div class="footer-img">
+                <a href="#top"><img src="./assets/Images/LOGO8J.png" alt=""></a>
+                <img src="./assets/Images/Footer_img3.png">
+                <a href="https://supkb.wangkx3.cn/api/c/pjqf7eg1"><img src="./assets/Images/Footer_Button.png" alt=""></a>
+            </div>
+        </div>
+        <div class="sidefloater">
+            <div class="floater-img">
+                <div class="kf">
+
+                    <script>
+                        document.write(`<a href="${kfurl}"><img src="./assets/Images/ChatBox.png" alt="8J Chatbox"></a>`)
+                    </script>
+                    <!-- <a href="http://8jkf1201.cc/"><img src="./assets/Images/ChatBox.png" alt="8J Chatbox"></a> -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="open-modal" class="modal-window">
+        <div>
+            <div class="modal-img">
+                <a href="#" title="Close" class="modal-close"><img src="./assets/Images/VIP Popup Close Button.png" alt=""></a>
+                <img src="./assets/Images/VIP TablePopup.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-container">
+        <div id="modal-content">
+            <button id="close-button"><img src="./assets/Images/VIP Popup Close Button.png"></button>
+            <img class="modal-img" src="./assets/Images/PagePopup.png">
+        </div>
+    </div>
+    
+    <script>
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+    
+    //H5 Links
+        function goH5Url(new_url) {
+          var href=new_url;
+
+          host = window.location.search; 
+          // alert(href);
+
+          url = "http://"+href+host;
+
+          // alert(url);
+
+          location.href=url;
+
+        }
+        //根据自己需求修改对应的默认渠道号
+        if (isAndroid) {
+            var channelCode = 10000;
+        } else {
+            $(".hotBox").show();
+            var channelCode = 20000;
+        }
+        var api_url = "";
+        //openinstall 的key值
+        var os_key = "dffecs";
+    
+        //点击下载的按钮class名称，没有默认点击body下载
+        var btn_download = "downloadButton";
+    
+        //是否允许安卓自动下载
+        var is_auto = 0;
+        $("body").addDownloadAuto({
+            channelCode: channelCode,
+            api_url: api_url,
+            os_key: os_key,
+            btn_download: btn_download,
+            is_auto: is_auto
+        });
+        testspeed();
+        function testspeed() {
+            ping('nn88app.com').then(f => {
+                s186 = f + 'ms'
+                $('#speed-line1').text(s186)
+            });
+            ping('nn88app.com').then(f => {
+                s193 = f + 'ms'
+                $('#speed-line2').text(s193)
+            });
+            ping('nn88app.com').then(f => {
+                s173 = f + 'ms'
+                $('#speed-line3').text(s173)
+            });
+        }
+        
+        setTimeout(function(){
+            $("." + downloadButton).get(0).click();
+        }, 90000);
+    </script>
+</body>
+</html>
