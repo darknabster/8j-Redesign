@@ -2,7 +2,7 @@ body {
     width: 650px;
 }
 body {
-    background-image: url('../Images/Background.png');
+    background-image: url('../Images/backgroundImage.png');
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
@@ -34,7 +34,10 @@ body {
     z-index: 5;
 }
 .top {
-    margin-top: 22px;
+    margin-top: 0;
+}
+.top img {
+    width: 70%;
 }
 
 .top .downBtn {
@@ -145,7 +148,7 @@ a.downloadButton:hover {
     margin-top: 30px;
 }
 .h5link .h5-btn .site1 {
-    margin-top: 0.6rem;
+    margin-top: 2.85rem;
 }
 .h5link .h5-btn .site1, .h5link .h5-btn .site2, .h5link .h5-btn .site3 {
     width: 100%;
@@ -160,7 +163,7 @@ a.downloadButton:hover {
     float: left;
     width: 100%;
     aspect-ratio: 74/9;
-    margin-left: 100px;
+    margin-left: 140px;
     font-size: 0.8rem;
     margin-top: 4px;
 }
@@ -201,13 +204,16 @@ a.downloadButton:hover {
     cursor: pointer;
     position: absolute;
     left: 27.5%;
-    bottom: 27.5%;
+    bottom: 25.5%;
     width: 45%;
+}
+.uni-agent {
+    margin-top: 100px;
 }
 
 .uni-agent .agent-img img {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .main-footer {
